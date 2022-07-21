@@ -1,0 +1,40 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 1280px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #4e4e4e;
+  display: flex;
+  justify-content: space-between;
+}
+
+.name {
+  width: 88px;
+  height: 29px;
+  margin-left: 94px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  align-self: center;
+}
+
+.box-menu {
+  width: 200px;
+  height: 29px;
+  margin-right: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.menu {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f1f1f1;
+  align-self: center;
+}
