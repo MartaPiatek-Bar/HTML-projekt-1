@@ -3,38 +3,106 @@ body {
 }
 
 .container {
-  width: 1280px;
-  height: 50px;
   margin: 0 auto;
-  background-color: #4e4e4e;
+  width: 960px;
   display: flex;
   justify-content: space-between;
+}
+
+.name,
+.menu {
+  font-size: 18px;
+  line-height: 21px;
+  color: #f1f1f1;
+  margin-top: 15px;
+}
+
+.control {
+  margin: 0 auto;
+  width: 1280px;
+  height: 50px;
+  background-color: #4e4e4e;
 }
 
 .name {
-  width: 88px;
-  height: 29px;
-  margin-left: 94px;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #ffffff;
-  align-self: center;
 }
 
 .box-menu {
-  width: 200px;
-  height: 29px;
-  margin-right: 94px;
+  width: 250px;
   display: flex;
   justify-content: space-between;
-  align-self: center;
 }
 
 .menu {
   font-weight: 400;
+  display: inline-block;
+}
+
+.cover {
+  margin: 0 auto;
+  width: 1280px;
+  height: 100vh;
+  background-image: url("cover.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: lightseagreen;
+  position: absolute;
+  opacity: 0.15;
+  z-index: 2;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro,
+.slogan,
+.offer {
+  font-weight: 700;
+  z-index: 3;
+  ju
+}
+
+.slogan,
+.offer {
   font-size: 18px;
   line-height: 21px;
-  color: #f1f1f1;
+  color: #ffffff;
+}
+
+.intro {
+  width: 577px;
+  height: 46.11px;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  margin-top: 100px;
+}
+
+.slogan {
+  width: 276px;
+  height: 23.13px;
+  margin-top: 120px;
+}
+
+.button {
+  box-sizing: border-box;
+  width: 164px;
+  height: 40.74px;
+  border: 3px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+}
+
+.offer {
   align-self: center;
 }
