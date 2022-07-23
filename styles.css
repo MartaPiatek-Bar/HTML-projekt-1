@@ -19,7 +19,6 @@ body {
 
 .control {
   margin: 0 auto;
-  width: 1280px;
   height: 50px;
   background-color: #4e4e4e;
 }
@@ -41,7 +40,6 @@ body {
 
 .cover {
   margin: 0 auto;
-  width: 1280px;
   height: 100vh;
   background-image: url("cover.jpg");
   background-size: cover;
@@ -68,7 +66,6 @@ body {
 .offer {
   font-weight: 700;
   z-index: 3;
-  ju
 }
 
 .slogan,
