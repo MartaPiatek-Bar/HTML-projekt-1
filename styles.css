@@ -20,7 +20,7 @@ body {
 .control {
   margin: 0 auto;
   height: 50px;
-  background-color: #4e4e4e;
+  background: #4e4e4e;
 }
 
 .name {
@@ -102,4 +102,120 @@ body {
 
 .offer {
   align-self: center;
+}
+
+.people {
+  height: 100vh;
+  background: #f1f1f1;
+  position: relative;
+}
+
+.title {
+  width: 386px;
+  height: 35px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  color: #152d41;
+  margin-top: 70px;
+}
+
+.person-dad,
+.person-mum {
+  display: flex;
+  position: absolute;
+}
+
+.person-dad {
+  margin-top: 200px;
+  flex-direction: row;
+}
+
+.person-mum {
+  margin-top: 500px;
+  flex-direction: row-reverse;
+}
+
+.picture-dad {
+  width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  background-image: url("dad.jpg");
+}
+
+.picture-mum {
+  width: 197px;
+  height: 197px;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  background-size: cover;
+  background-position: center;
+  background-image: url("mum.jpg");
+}
+
+.parent-dad,
+.parent-mum {
+  width: 811px;
+  height: 145px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-top: auto;
+}
+
+.parent-dad {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.parent-mum {
+  text-align: right;
+  margin-right: 30px;
+}
+
+/* :nth-child(odd) {
+  
+}
+
+:nth-child(even) {
+
+}  */
+
+.foot {
+  margin: 0 auto;
+  height: 71px;
+  background: #4e4e4e;
+}
+
+.copy,
+.box-icon {
+  margin-top: 22px;
+}
+
+.copy {
+  height: 21px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.box-icon {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.insta,
+.fb {
+  width: 50px;
+}
+
+.blog {
+  height: 100vw;
+  background-color: #405D78;
+  /* position: relative; */
 }
