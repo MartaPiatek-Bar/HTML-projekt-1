@@ -116,17 +116,20 @@ a {
 }
 
 .button {
-  box-sizing: border-box;
   width: 164px;
   height: 40.74px;
   border: 3px solid #ffffff;
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 50px;
+  transition-property: background, color;
+  transition-duration: 1s;
 }
 
-.offer {
-  align-self: center;
+.button:hover {
+background: white;
+color: black;
 }
 
 /* o nas */
@@ -142,7 +145,7 @@ a {
 }
 
 .title {
-  margin-top: 50px;
+  margin-top: 70px;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -180,9 +183,9 @@ a {
   align-self: center;
 }
 
-/* .person:nth-child(even) {
-  .parent: right;
-} */
+.item:nth-child(even) {
+  text-align: right;
+}
 
 /* blog */
 
@@ -217,8 +220,11 @@ a {
   height: 220px;
   background: #f1f1f1;
   display: flex;
-  /* transform: scale(1.05);
-  @keyframes */
+  /* transition-duration: 0,5s; */
+}
+
+.adventure:hover {
+    transform: scale(1.05);  
 }
 
 .city {
