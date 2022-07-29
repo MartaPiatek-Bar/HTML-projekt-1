@@ -218,9 +218,9 @@ a:hover {
 }
 
 .adventure-box {
-  margin-top: 100px;
+  margin-top: 40px;
   display: flex;
-  gap: 50px 30px;
+  gap: 60px 30px;
   flex-wrap: wrap;
 }
 
