@@ -66,8 +66,7 @@ a {
 /* strona główna */
 
 .cover {
-  margin: 0 auto;
-  height: 100vh;
+  height: calc(100vh - 50px);
   background-image: url("cover.jpg");
   background-size: cover;
   background-position: center;
@@ -118,6 +117,7 @@ a {
   border: 3px solid #ffffff;
   margin-top: 50px;
   transition-duration: 1s;
+  align-self: flex-start;
 }
 
 .button:hover {
@@ -176,11 +176,17 @@ a {
 }
 
 .parent {
+  margin-top: 5px;
   padding: 5%;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
   align-self: center;
+}
+
+.margin {
+  display: block;
+  margin-bottom: 15px;
 }
 
 .person:nth-of-type(odd) {
@@ -245,8 +251,8 @@ a {
 
 .dot {
   position: absolute;
-  top: -12px;
-  left: -12px;
+  top: -11px;
+  left: -11px;
   background: #e07a64;
   width: 22px;
   height: 22px;
