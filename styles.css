@@ -51,11 +51,8 @@ a {
   font-weight: 700;
 }
 
-.box-menu {
-  width: 200px;
-}
-
 .menu {
+  margin-right: 20px;
   font-weight: 400;
 }
 
@@ -99,14 +96,12 @@ a {
 }
 
 .intro {
-  width: 577px;
   height: 46.11px;
   font-size: 36px;
   line-height: 42px;
 }
 
 .slogan {
-  width: 276px;
   height: 23.13px;
   margin-top: 70px;
 }
