@@ -63,8 +63,8 @@ a {
 /* strona główna */
 
 .cover {
-  height: calc(100vh - 50px);
-  background-image: url("cover.jpg");
+  height: 100vh;
+  background-image: url("pictures/cover.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -159,15 +159,11 @@ a {
 }
 
 .picture-dad {
-  background-image: url("dad.jpg");
+  background-image: url("pictures/dad.jpg");
 }
 
 .picture-mum {
-  background-image: url("mum.jpg");
-}
-
-.mum {
-  text-align: right;
+  background-image: url("pictures/mum.jpg");
 }
 
 .parent {
@@ -182,6 +178,10 @@ a {
 .margin {
   display: block;
   margin-bottom: 15px;
+}
+
+.person:nth-of-type(odd) .parent {
+  text-align: right;
 }
 
 .person:nth-of-type(odd) {
