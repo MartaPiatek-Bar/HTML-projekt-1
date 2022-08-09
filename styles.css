@@ -13,7 +13,7 @@ a {
 
 .container {
   margin: 0 auto;
-  width: 960px;
+  width: 90%;
 }
 
 .padding {
@@ -36,8 +36,7 @@ a {
   background: #4e4e4e;
 }
 
-.control-menu,
-.box-menu {
+.control-menu {
   display: flex;
   justify-content: space-between;
 }
@@ -49,6 +48,10 @@ a {
 
 .name {
   font-weight: 700;
+}
+
+.box-menu {
+  display: none;
 }
 
 .menu {
@@ -115,12 +118,6 @@ a {
   align-self: flex-start;
 }
 
-.button:hover {
-  background: white;
-  color: black;
-  font-weight: 700;
-}
-
 /* o nas */
 
 .people {
@@ -135,6 +132,7 @@ a {
 .family {
   height: auto;
   flex-direction: column;
+  justify-content: center;
 }
 
 .title {
@@ -142,10 +140,12 @@ a {
   font-size: 36px;
   line-height: 42px;
   color: #152d41;
+  align-self: center;
 }
 
 .person {
   margin-top: 100px;
+  flex-direction: column;
 }
 
 .picture-dad,
@@ -156,6 +156,7 @@ a {
   aspect-ratio: 1/1;
   background-size: cover;
   background-position: center;
+  align-self: center;
 }
 
 .picture-dad {
@@ -180,14 +181,6 @@ a {
   margin-bottom: 15px;
 }
 
-.person:nth-of-type(odd) .parent {
-  text-align: right;
-}
-
-.person:nth-of-type(odd) {
-  flex-direction: row-reverse;
-}
-
 /* blog */
 
 .blog {
@@ -207,9 +200,10 @@ a {
 
 .list {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 26px;
   line-height: 42px;
   color: #ffffff;
+  align-self: center;
 }
 
 .adventure-box {
@@ -221,14 +215,10 @@ a {
 .adventure {
   position: relative;
   margin: auto;
-  width: 220px;
-  height: 220px;
+  width: 339px;
+  height: 332px;
   background: #f1f1f1;
   transition-duration: 0.5s;
-}
-
-.adventure:hover {
-  transform: scale(1.05);
 }
 
 .city,
@@ -246,11 +236,11 @@ a {
 
 .dot {
   position: absolute;
-  top: -11px;
-  left: -11px;
+  top: -19px;
+  left: -19px;
   background: #e07a64;
-  width: 22px;
-  height: 22px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
 }
 
@@ -264,12 +254,13 @@ a {
 
 .foot,
 .footer-menu {
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .foot {
   margin: 0 auto;
-  height: 71px;
+  height: 147px;
   background: #4e4e4e;
 }
 
@@ -278,6 +269,7 @@ a {
 }
 
 .copy {
+  margin-bottom: 10px;
   height: 21px;
   font-weight: 700;
   font-size: 18px;
@@ -285,8 +277,89 @@ a {
   color: #ffffff;
 }
 
+.box-icon {
+  margin-top: 10px;
+}
+
 .insta,
 .fb {
   width: 50px;
   color: white;
+}
+
+/* RWD */
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+
+  .box-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .button:hover {
+    background: white;
+    color: black;
+    font-weight: 700;
+  }
+
+  .title {
+    align-self: auto;
+  }
+
+  .person {
+    flex-direction: row;
+  }
+
+  .person:nth-of-type(odd) {
+    flex-direction: row-reverse;
+  }
+
+  .picture-dad,
+  .picture-mum {
+    align-self: auto;
+  }
+
+  .person:nth-of-type(odd) .parent {
+    text-align: right;
+  }
+
+  .list {
+    align-self: auto;
+    font-size: 36px;
+  }
+  .dot {
+    top: -11px;
+    left: -11px;
+    width: 22px;
+    height: 22px;
+  }
+  .adventure {
+    width: 220px;
+    height: 220px;
+  }
+
+  .adventure:hover {
+    transform: scale(1.05);
+  }
+
+  .foot,
+  .footer-menu {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .foot {
+    height: 71px;
+  }
+
+  .copy {
+    margin-bottom: 0px;
+  }
+
+  .box-icon {
+    margin-top: 0px;
+  }
 }
